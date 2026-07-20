@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #fdf2f8;
+    color: #1e293b;
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, #9d174d 0%, #ec4899 100%);
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(190, 24, 93, 0.15);
+}
+
+.details-link {
+    color: #2563eb;
+}
+
+.details-link:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+.form-contato {
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: inherit;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #fff;
+    color: #111827;
+}
+
+.form-contato button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ec4899;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-contato button:hover {
+    background-color: #db2777;
+}
+
+#mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: max-height 0.35s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+#mobile-menu.active {
+    max-height: 300px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#mobile-menu-button i,
+#theme-toggle i,
+#theme-toggle-mobile i {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#mobile-menu-button.active i {
+    transform: rotate(90deg);
+}
+
+.icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.75);
+    color: #0f172a;
+    border: 1px solid rgba(15, 23, 42, 0.1);
+    transition: all 0.25s ease;
+}
+
+.icon-btn:hover {
+    background: #fce7f3;
+    color: #be185d;
+    transform: translateY(-1px);
+}
+
+html.theme-dark,
+html.theme-dark body {
+    background: #0f172a;
+    color: #cbd5e1;
+}
+
+html.theme-dark .bg-white {
+    background: #1e293b !important;
+}
+
+html.theme-dark .bg-pink-50 {
+    background: #111827 !important;
+}
+
+html.theme-dark .bg-gray-50 {
+    background: #0f172a !important;
+}
+
+html.theme-dark .text-gray-800,
+html.theme-dark .text-gray-700,
+html.theme-dark .text-gray-600,
+html.theme-dark .text-gray-500 {
+    color: #cbd5e1 !important;
+}
+
+html.theme-dark .text-gray-400 {
+    color: #94a3b8 !important;
+}
+
+html.theme-dark .border-gray-700 {
+    border-color: #334155 !important;
+}
+
+html.theme-dark .shadow-md,
+html.theme-dark .shadow-2xl {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, .35) !important;
+}
+
+html.theme-dark .site-header {
+    background: #0f172a;
+}
+
+html.theme-dark .nav-links a,
+html.theme-dark .logo a {
+    color: #e2e8f0;
+}
+
+html.theme-dark .nav-links a:hover,
+html.theme-dark .details-link {
+    color: #f9a8d4;
+}
+
+html.theme-dark .btn-light {
+    background: #f472b6;
+    color: #0f172a;
+}
+
+html.theme-dark .btn-outline {
+    border-color: #f472b6;
+    color: #f9a8d4;
+}
+
+html.theme-dark .btn-outline:hover {
+    background: #f472b6;
+    color: #0f172a;
+}
+
+html.theme-dark .info-card,
+html.theme-dark .resume-card,
+html.theme-dark .contact-box {
+    background: #1e293b;
+    border: 1px solid #334155;
+}
+
+html.theme-dark .form-contato {
+    background: #1e293b;
+}
+
+html.theme-dark .campo label {
+    color: #e2e8f0;
+}
+
+html.theme-dark .campo input,
+html.theme-dark .campo textarea {
+    background: #0f172a;
+    color: #e2e8f0;
+    border-color: #334155;
+}
+
+html.theme-dark .form-contato button {
+    background: #ec4899;
+}
+
+html.theme-dark .form-contato button:hover {
+    background: #db2777;
+}
+
+html.theme-dark .icon-btn {
+    background: #1e293b;
+    color: #f9a8d4;
+    border-color: #334155;
+}
+
+html.theme-dark .icon-btn:hover {
+    background: #334155;
+    color: #fbcfe8;
+}
+
+@media (max-width: 767px) {
+    header nav {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+
+    #home {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    #home h1 {
+        font-size: 2.1rem;
+        line-height: 1.15;
+    }
+}
